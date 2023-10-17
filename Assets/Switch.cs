@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Switch : MonoBehaviour
 {
@@ -14,5 +15,12 @@ public class Switch : MonoBehaviour
     void Update()
     {
         
+    }
+
+    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        transform.DOMoveY(transform.position.y - 0.3f, 3);
     }
 }

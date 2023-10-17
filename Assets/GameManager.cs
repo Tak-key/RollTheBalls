@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
 
     public static int MoveCountProp
     {
-        set { moveCount = value;}
         get { return moveCount;}
+        set { moveCount = value;}
     }
     void Start()
     {

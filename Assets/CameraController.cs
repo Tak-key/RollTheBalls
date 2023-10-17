@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class CameraControl : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
+    [SerializeField, Header("操作キャラ変更スクリプト")]
+    ChangeCharacter charaChange;
+
     [SerializeField, Header("ターゲットするオブジェクト")]
     GameObject targetObj;
     void Start()
     {
-        
+        targetObj = charaChange.Chara[0];
     }
 
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y, targetObj.transform.position.z -2);
+        targetObj = charaChange.Chara[charaChange.NowChara];
+
+        transform.position = new Vector3(targetObj.transform.position.x, transform.position.y, targetObj.transform.position.z -2);
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -48,4 +53,6 @@ public class CameraControl : MonoBehaviour
             transform.DORotate(new Vector3(0, 90, 0), 1, RotateMode.WorldAxisAdd);
         }
     }
+
+    
 }
