@@ -2952,29 +2952,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1282352037215409557, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
-      propertyPath: m_Type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1604878607931407008, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3158858843901269516, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
       propertyPath: m_Name
       value: GreenPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 3158858843901269516, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3158858843901269516, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
-      propertyPath: m_TagString
-      value: GreenPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 5339781245832978393, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6025053353112792793, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3015,10 +2995,6 @@ PrefabInstance:
     - target: {fileID: 6025053353112792793, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8927892310200995803, guid: 171a30aa399098f4d8b2d18212feffc2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.199
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
