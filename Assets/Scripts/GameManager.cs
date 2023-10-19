@@ -60,6 +60,11 @@ public class GameManager : MonoBehaviour
         if (goalCount == goalFlags.Length)
         {
             Debug.Log("クリア！");
+            //セーブデータ更新
+		    if (PlayerPrefs.GetInt ("CLEAR_STAGE_NO", 0) < stageNo) //セーブされているステージNoより今のステージNoが大きければ
+            {
+			    PlayerPrefs.SetInt ("CLEAR_STAGE_NO", stageNo);	//ステージナンバーを記録
+		    }
         }
     }
     void Update()
