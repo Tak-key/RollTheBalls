@@ -31,12 +31,13 @@ public class GoalBlock : MonoBehaviour
         {
             ballScript = collision.gameObject.GetComponent<BallController>();
 
-            if (ballScript.isMoving)
+            if (ballScript.isMoving) //ボールが動いている間は処理をしない
             {
                 return;
             }
             else
             {
+                //ゲームマネージャーの、ゴールナンバーに応じたフラグをtrueにする
                 gameManager.GoalCheck(goalNo, true);
             }
         }
@@ -44,6 +45,7 @@ public class GoalBlock : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-            gameManager.GoalCheck(goalNo, false);
+        //ゲームマネージャーの、ゴールナンバーに応じたフラグをfalseにする
+        gameManager.GoalCheck(goalNo, false);
     }
 }

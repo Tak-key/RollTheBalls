@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 985982308972356284}
   - component: {fileID: 1604878607931407008}
   - component: {fileID: 4595501436804042099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GreenPlayer
   m_TagString: GreenPlayer
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8927892310200995803}
   - component: {fileID: 1282352037215409557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
